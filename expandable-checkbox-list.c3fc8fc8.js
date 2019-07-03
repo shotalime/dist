@@ -119,15 +119,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"components/expandable-checkbox-list/expandable-checkbox-list.js":[function(require,module,exports) {
 jQuery(function ($) {
-  $(".expandable-checkbox-list").find(".checkbox-buttons").hide();
-  $(".expandable-checkbox-list__button").on('click', function () {
-    $(".expandable-checkbox-list").find(".checkbox-buttons").toggle();
-    var value = $(".expandable-checkbox-list__arrow").text();
+  var list = $(".expandable-checkbox-list");
+  $(list).find(".checkbox-buttons").hide();
+  $(list).find(".expandable-checkbox-list__button").on('click', function () {
+    $(this).parent(list).find(".checkbox-buttons").toggle();
+    var value = $(this).find(".expandable-checkbox-list__arrow").text();
 
     if (value == "keyboard_arrow_down") {
-      $(".expandable-checkbox-list__arrow").text("keyboard_arrow_up");
+      $(this).find(".expandable-checkbox-list__arrow").text("keyboard_arrow_up");
     } else {
-      $(".expandable-checkbox-list__arrow").text("keyboard_arrow_down");
+      $(this).find(".expandable-checkbox-list__arrow").text("keyboard_arrow_down");
     }
 
     ;
@@ -161,7 +162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51692" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65429" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

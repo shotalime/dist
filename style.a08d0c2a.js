@@ -204,7 +204,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/jQuery/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.custom.css":"jQuery/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.custom.css","/fonts/fonts.css":"fonts/fonts.css","/fonts/material-icons.css":"fonts/material-icons.css","C:\\work\\uiKit\\src\\img\\checkbox-buttons__arrow.svg":[["checkbox-buttons__arrow.61168eda.svg","img/checkbox-buttons__arrow.svg"],"img/checkbox-buttons__arrow.svg"],"C:\\work\\uiKit\\src\\img\\arrowback.svg":[["arrowback.60f74660.svg","img/arrowback.svg"],"img/arrowback.svg"],"C:\\work\\uiKit\\src\\img\\arrowforward.svg":[["arrowforward.80f1fb9b.svg","img/arrowforward.svg"],"img/arrowforward.svg"],"_css_loader":"../../../Users/Jaguar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../Users/Jaguar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/jQuery/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.custom.css":"jQuery/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.custom.css","/fonts/fonts.css":"fonts/fonts.css","/fonts/material-icons.css":"fonts/material-icons.css","C:\\work\\uiKit\\src\\img\\hotelroom\\registration-background.jpg":[["registration-background.3eb6c871.jpg","img/hotelroom/registration-background.jpg"],"img/hotelroom/registration-background.jpg"],"C:\\work\\uiKit\\src\\img\\checkbox-buttons__arrow.svg":[["checkbox-buttons__arrow.61168eda.svg","img/checkbox-buttons__arrow.svg"],"img/checkbox-buttons__arrow.svg"],"C:\\work\\uiKit\\src\\img\\arrowback.svg":[["arrowback.60f74660.svg","img/arrowback.svg"],"img/arrowback.svg"],"C:\\work\\uiKit\\src\\img\\arrowforward.svg":[["arrowforward.80f1fb9b.svg","img/arrowforward.svg"],"img/arrowforward.svg"],"_css_loader":"../../../Users/Jaguar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../Users/Jaguar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -232,7 +232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65429" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62036" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

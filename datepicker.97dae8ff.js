@@ -136,10 +136,10 @@ jQuery(function ($) {
     }
   });
   $('.datepicker').datepicker('setDate', ['+3d', '+7d']);
-  $('[name=accept]').on('click', function () {
+  $('[name=datepicker_accept]').on('click', function () {
     $('.datepicker__wrap').addClass('datepicker__wrap-hide');
   });
-  $('[name=clear]').on('click', function () {
+  $('[name=datepicker_clear]').on('click', function () {
     $('.datepicker').datepicker('setDate', [null, null]);
     $('[name=startDate]').val("ДД.ММ.ГГ");
     $('[name=endDate]').val("ДД.ММ.ГГ");
@@ -176,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51877" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59094" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -122,13 +122,7 @@ jQuery(function ($) {
   $('.room-selection .datepicker__wrap').addClass('datepicker__wrap-hide');
   $('.room-selection .date-dropdown').on('click', function () {
     $('.room-selection .datepicker__wrap').toggleClass('datepicker__wrap-hide');
-  }); // временно закоментировано, для проверки ПП
-  // $(document).click(function(event) {
-  //     if ($(event.target).closest(".datepicker__wrap").length) return;
-  //     if ($(event.target).closest(".room-selection .date-dropdown").length) return;
-  //     $(".datepicker__wrap").addClass('datepicker__wrap-hide')
-  //     event.stopPropagation();
-  //   });
+  });
 });
 },{}],"../../../Users/Jaguar/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -158,7 +152,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51877" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59094" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

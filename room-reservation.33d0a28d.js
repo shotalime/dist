@@ -145,7 +145,7 @@ jQuery(function ($) {
   calculationСostItem(cost, daysCount);
   calculationСostTotal(cost, daysCount);
   calculationInTotalVal(cost, daysCount, discount, serviceCharge, adServiceCharge);
-  $('.room-reservation').find('[name = accept]').on('click', function () {
+  $('.room-reservation').find('[name = datepicker_accept]').on('click', function () {
     //Расчет количества дней
     startDate = $('.date-dropdown').find('[name = startDate]').val();
     endDate = $('.date-dropdown').find('[name = endDate]').val();
@@ -230,7 +230,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52796" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52006" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
